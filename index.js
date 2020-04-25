@@ -5,7 +5,8 @@ const formN =  document.getElementById("from")
 const toN =  document.getElementById("to")
 const name =  document.getElementById("name")
 
-
+quran.style.display = "none";
+ahzabN.style.display = "none";
 const todaydate= document.getElementById("date")
 
 
@@ -64,6 +65,10 @@ selected.addEventListener('change', event => {
     // quran.innerText= "The Ahazab that "+ selected.value + " need to read to day is:"
     // ahzabN.innerText= getTodayAhzab(ahzab)
     getTodayAhzab(ahzab)
+    quran.style.display = "block";
+    ahzabN.style.display = "block";
+
+
 })
 
 //get today Date
