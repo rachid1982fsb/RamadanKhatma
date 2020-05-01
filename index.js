@@ -22,7 +22,7 @@ const users = {HajMuhamed_Rakaa: [1,6],
                Abdelwadoud_Rakaa: [23,24],
                Miloud_Mouarif: [25,26],
                Hamza_Mouarif: [27,28],
-               Abdelssamad_Rakaa: [29,30],
+               Abdelssamad_Rakaa: [145,30],
                Adil_Rakaa: [31,32],
                Rachid_Rakaa: [33,34],
                Abdelwahab_Rakaa: [35,36],
@@ -77,12 +77,13 @@ let today = new Date();
 todaydate.innerText = today
 
 // convert a date to a number so we can use it to change Ahzab based on that date
-var dateN = (today.getMonth()+1)+today.getDate()
+var dateN = (30*5) + today.getDate()
+console.log(dateN, today.getMonth())
 
 // a function that take inital ahzab for the first day of ramadan and return the current ahzab based of today date
 const getTodayAhzab=(arr)=>{
-    const start = (arr[0] + 2*(dateN - 29)) <= 60 ? (arr[0] + 2*(dateN - 29)) : (arr[0] + 2*(dateN - 29))-60
-    const end = (arr[1] + 2*(dateN - 29)) <= 60 ? (arr[1] + 2*(dateN - 29)) : (arr[1] + 2*(dateN - 29))-60
+    const start = (arr[0] + 2*(dateN - 145)) <= 60 ? (arr[0] + 2*(dateN - 145)) : (arr[0] + 2*(dateN - 145))-60
+    const end = (arr[1] + 2*(dateN - 145)) <= 60 ? (arr[1] + 2*(dateN - 145)) : (arr[1] + 2*(dateN - 145))-60
     console.log(dateN)
     formN.innerText=start
     toN.innerText=end
