@@ -77,17 +77,14 @@ let today = new Date();
 todaydate.innerText = today
 
 // convert a date to a number so we can use it to change Ahzab based on that date
-const dateN = 22
-today.getDate()
+const dateN = today.getDate()
 
 // a function that take inital ahzab for the first day of ramadan and return the current ahzab based of today date
 const getTodayAhzab=(arr)=>{
-    console.log((arr[0] + 2*(dateN + 5)))
+
     const start = (arr[0] + 2*(dateN + 5)) <= 60 ? (arr[0] + 2*(dateN + 5)) : (arr[0] + 2*(dateN + 5))-60
     const end = (arr[1] + 2*(dateN + 5)) <= 60 ? (arr[1] + 2*(dateN + 5)) : (arr[1] + 2*(dateN + 5))-60
-    // console.log(dateN)
     formN.innerText=start
     toN.innerText=end
-    //  return "form Hizb "+start + " to " + "Hizb "+end
 }
 
