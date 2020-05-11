@@ -26,7 +26,7 @@ const users = {
                Abdelwadoud_Rakaa: [23,24],
                Miloud_Mouarif: [25,26],
                Hamza_Mouarif: [27,28],
-               Abdelssamad_Rakaa: [145,30],
+               Abdelssamad_Rakaa: [29,30],
                Adil_Rakaa: [31,32],
                Rachid_Rakaa: [33,34],
                Abdelwahab_Rakaa: [35,36],
