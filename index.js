@@ -11,9 +11,13 @@ const todaydate= document.getElementById("date")
 
 
 
-const users = {HajMuhamed_Rakaa: [1,6],
-               HajHassan_Rakaa: [7,10],
-               Abdrahim_Rakaa: [11,12],
+const users = {
+               AbdElssamia_Rakaa: [1,2],
+               Yahya_Rakaa: [3,4],
+               HajMuhamed_Rakaa: [5,6],
+               Imran_Rakaa: [7,8],
+               IbnAbdelmoumen_Rakaa: [9,10],
+               HajHassan_Rakaa: [11,12],
                Simohammed_Rakaa: [13,14],
                Said_Elkriti: [15,16],
                Abdelmoumen_Rakaa: [17,18],
