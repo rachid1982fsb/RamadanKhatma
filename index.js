@@ -86,8 +86,8 @@ const dateN = today.getDate()
 // a function that take inital ahzab for the first day of ramadan and return the current ahzab based of today date
 const getTodayAhzab=(arr)=>{
 
-    const start = (arr[0] + 2*(dateN + 17)) <= 60 ? (arr[0] + 2*(dateN + 17)) : (arr[0] + 2*(dateN + 17))-60
-    const end = (arr[1] + 2*(dateN + 17)) <= 60 ? (arr[1] + 2*(dateN + 17)) : (arr[1] + 2*(dateN + 17))-60
+    const start = (arr[0] + 2*(dateN - 13)) <= 60 ? (arr[0] + 2*(dateN - 13)) : (arr[0] + 2*(dateN - 13))-60
+    const end = (arr[1] + 2*(dateN - 13)) <= 60 ? (arr[1] + 2*(dateN - 13)) : (arr[1] + 2*(dateN - 13))-60
     formN.innerText=start
     toN.innerText=end
 }
