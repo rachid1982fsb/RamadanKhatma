@@ -66,7 +66,7 @@ selected.addEventListener('change', event => {
     event.preventDefault();
  
     const ahzab = users[selected.value] ? users[selected.value] : [0,0]
-    name.innerText=" "+selected.value + " "
+    name.innerText=" "+selected.value + "test "
     // quran.innerText= "The Ahazab that "+ selected.value + " need to read to day is:"
     // ahzabN.innerText= getTodayAhzab(ahzab)
     getTodayAhzab(ahzab)
