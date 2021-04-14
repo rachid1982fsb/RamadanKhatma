@@ -71,7 +71,7 @@ selected.addEventListener('change', event => {
     quran.style.display = "block";
     ahzabN.style.display = "block";
 })
-weg
+
 
 //get today Date
 let today = new Date(); 
