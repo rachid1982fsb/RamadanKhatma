@@ -92,7 +92,7 @@ const getTodayAhzab=(arr)=>{
     const start = (arr[0] + 2*(dateInRamadan(dateN, 14) -1 )) <= 60 ? (arr[0] + 2*(dateInRamadan(dateN, 14) -1 )) : (arr[0] + 2*(dateInRamadan(dateN, 14) -1 ))-60
     const end = (arr[1] + 2*(dateInRamadan(dateN, 14) -1 )) <= 60 ? (arr[1] + 2*(dateInRamadan(dateN, 14) -1 )) : (arr[1] + 2*(dateInRamadan(dateN, 14) -1 ))-60
     
-    formN.innerText=11
-    toN.innerText=13
+    formN.innerText=start
+    toN.innerText=end
 }
 
