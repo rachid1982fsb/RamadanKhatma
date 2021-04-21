@@ -84,6 +84,7 @@ const hadit1 = "قال رسول الله -صلّى الله عليه وسلّم-
 
 tohadit.innerText = hadit1
 
+
 // convert a date to a number so we can use it to change Ahzab based on that date
 const dateN = today.getDate()
 
