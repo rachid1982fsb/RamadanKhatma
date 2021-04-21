@@ -78,11 +78,11 @@ let today = new Date();
 todaydate.innerText = today
 
 // get Hadit 
-const tohadit= document.getElementById("hadit")
+//const tohadit= document.getElementById("hadit")
 
-const hadit1 = "قال رسول الله -صلّى الله عليه وسلّم-: (مَن قرأَ حرفًا من كتابِ اللَّهِ فلَهُ بِهِ حسنةٌ، والحسنةُ بعشرِ أمثالِها، لا أقولُ آلم حرفٌ، ولَكِن ألِفٌ حرفٌ وميمٌ حرفٌ)"
+//const hadit1 = "قال رسول الله -صلّى الله عليه وسلّم-: (مَن قرأَ حرفًا من كتابِ اللَّهِ فلَهُ بِهِ حسنةٌ، والحسنةُ بعشرِ أمثالِها، لا أقولُ آلم حرفٌ، ولَكِن ألِفٌ حرفٌ وميمٌ حرفٌ)"
 
-tohadit.innerText = hadit1
+//tohadit.innerText = hadit1
 
 
 // convert a date to a number so we can use it to change Ahzab based on that date
