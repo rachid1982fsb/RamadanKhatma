@@ -9,7 +9,7 @@ quran.style.display = "none";
 ahzabN.style.display = "none";
 const todaydate= document.getElementById("date")
 
-
+const nile=  window.location.search
 
 const users = {
                Khalid_Rakaa: [1,2],
@@ -17,7 +17,8 @@ const users = {
                Abdelwadoud_Rakaa: [5,6],
                //Imran_Rakaa: [7,8],
                //IbnAbdelmoumen_Rakaa: [9,10],
-                window.location.search:[0,10],
+               test_name:[100,22],
+               nile:[0,10],
                //HajHassan_Rakaa: [11,12],
                //Simohammed_Rakaa: [13,14],
                AbdElssamia_Rakaa: [7,8],
