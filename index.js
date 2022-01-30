@@ -1,4 +1,4 @@
-const selected=document.getElementById("selected")
+const selected = document.getElementById("selected")
 const quran =  document.getElementById("quran")
 const ahzabN =  document.getElementById("ahzab")
 const formN =  document.getElementById("from")
@@ -11,13 +11,13 @@ const todaydate= document.getElementById("date")
 
 const nile=  window.location.search
 
-const users = {
+let users = {
                Khalid_Rakaa: [1,2],
                HajMuhamed_Rakaa: [3,4],
                Abdelwadoud_Rakaa: [5,6],
                //Imran_Rakaa: [7,8],
                //IbnAbdelmoumen_Rakaa: [9,10],
-               test_name:[100,22],
+               test_name2:[100,22],
                nile:[0,10],
                //HajHassan_Rakaa: [11,12],
                //Simohammed_Rakaa: [13,14],
@@ -46,9 +46,7 @@ const users = {
                Hamza_Mouarif: [37,38]
             }
             
-
-
-const usersNames= Object.keys(users)
+const usersNames= nile == "?yes" ? Object.keys(users) : null
 
 
 const mapUsers = () =>{
