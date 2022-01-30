@@ -9,7 +9,9 @@ quran.style.display = "none";
 ahzabN.style.display = "none";
 const todaydate= document.getElementById("date")
 
-const nile=  window.location.search
+const urlPram=  window.location.search
+
+let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb"]
 
 let users = {
                Khalid_Rakaa: [1,2],
@@ -17,8 +19,7 @@ let users = {
                Abdelwadoud_Rakaa: [5,6],
                //Imran_Rakaa: [7,8],
                //IbnAbdelmoumen_Rakaa: [9,10],
-               test_name2:[100,22],
-               nile:[0,10],
+               test_name3:[100,22],
                //HajHassan_Rakaa: [11,12],
                //Simohammed_Rakaa: [13,14],
                AbdElssamia_Rakaa: [7,8],
@@ -46,7 +47,7 @@ let users = {
                Hamza_Mouarif: [37,38]
             }
             
-const usersNames= nile == "?yes" ? Object.keys(users) : null
+const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
 
 
 const mapUsers = () =>{
