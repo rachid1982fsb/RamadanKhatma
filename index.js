@@ -69,25 +69,26 @@ selected1.addEventListener('change', event => {
    let x = selected1.selectedIndex;
    let y = selected1.options;
     console.log("Index: " + y[x].index + " is " + y[x].text)
-    //const ahzab = users[selected.value] ? users[selected.value] : [0,0]
-    name.innerText=" "+selected.value + " "
+    name.innerText = " "+ y[x].text + " "
+    const ahzab =  [(((y[x].index+1)*2)-1), ((y[x].index+1)*2)]? [(((y[x].index+1)*2)-1), ((y[x].index+1)*2)] : [0,0]
+    getTodayAhzab(ahzab)
 
-    //getTodayAhzab(ahzab)
     quran.style.display = "block";
     ahzabN.style.display = "block";
 })
-selected.addEventListener('change', event => {
-    event.preventDefault();
+
+//selected.addEventListener('change', event => {
+  //  event.preventDefault();
  
-    const ahzab = users[selected.value] ? users[selected.value] : [0,0]
-    name.innerText=" "+selected.value + " "
-    console.log("selectd")
+    //const ahzab = users[selected.value] ? users[selected.value] : [0,0]
+    //name.innerText=" "+selected.value + " "
+    //console.log("selectd")
     // quran.innerText= "The Ahazab that "+ selected.value + " need to read to day is:"
     // ahzabN.innerText= getTodayAhzab(ahzab)
-    getTodayAhzab(ahzab)
-    quran.style.display = "block";
-    ahzabN.style.display = "block";
-})
+    //getTodayAhzab(ahzab)
+    //quran.style.display = "block";
+    //ahzabN.style.display = "block";
+//})
 
 
 //get today Date
