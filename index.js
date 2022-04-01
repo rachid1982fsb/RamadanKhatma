@@ -67,7 +67,8 @@ selected1.addEventListener('change', event => {
    console.log("selectd 1")
    let x = selected1.selectedIndex;
    let y = selected1.options;
-    console.log("Index: " + y[x].index + " is " + y[x].text)
+  
+    console.log("Index: " + selected1.value + " is " + y[x].text)
     name.innerText = " "+ y[x].text + " "
     const ahzab =  [(((y[x].index+1)*2)-1), ((y[x].index+1)*2)]? [(((y[x].index+1)*2)-1), ((y[x].index+1)*2)] : [0,0]
     getTodayAhzab(ahzab)
