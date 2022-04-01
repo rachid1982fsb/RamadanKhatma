@@ -69,8 +69,9 @@ selected1.addEventListener('change', event => {
    let y = selected1.options;
   
     console.log("value: " + selected1.value + " is " + y[x].text)
+   let juza=selected1.value
     name.innerText = " "+ y[x].text + " "
-    const ahzab =  [(((y[x].index+1)*2)-1), ((y[x].index+1)*2)]? [(((y[x].index+1)*2)-1), ((y[x].index+1)*2)] : [0,0]
+    const ahzab =  [(((juza)*2)-1), ((juza)*2)]? [(((juza)*2)-1), ((juza)*2)] : [0,0]
     getTodayAhzab(ahzab)
 
     quran.style.display = "block";
