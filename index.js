@@ -61,7 +61,7 @@ const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
 //}
 
 
-mapUsers()
+//mapUsers()
 selected1.addEventListener('change', event => {
     event.preventDefault();
    console.log("selectd 1")
