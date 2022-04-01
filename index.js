@@ -51,14 +51,14 @@ let users = {
 const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
 
 
-const mapUsers = () =>{
-    usersNames.map( user => {
-        const option = document.createElement('option');
-        option.innerText= user
-        option.value= user
-        selected.append(option)
-    } )
-}
+//const mapUsers = () =>{
+  //  usersNames.map( user => {
+    //    const option = document.createElement('option');
+      //  option.innerText= user
+        //option.value= user
+     //   selected.append(option)
+  //  } )
+//}
 
 
 mapUsers()
