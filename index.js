@@ -12,7 +12,7 @@ const todaydate= document.getElementById("date")
 
 const urlPram=  window.location.search
 
-let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb",test1]
+let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb"]
 
 let users = {
                Khalid_Rakaa: [1,2],
