@@ -1,4 +1,5 @@
 const selected = document.getElementById("selected")
+const selected1 = document.getElementById("selected1")
 const quran =  document.getElementById("quran")
 const ahzabN =  document.getElementById("ahzab")
 const formN =  document.getElementById("from")
