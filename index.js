@@ -4,6 +4,16 @@ const ahzabN =  document.getElementById("ahzab")
 const formN =  document.getElementById("from")
 const toN =  document.getElementById("to")
 const name =  document.getElementById("name")
+import Sheet2API from 'sheet2api-js';
+const resp={}
+const url = 'https://sheet2api.com/v1/p2mcfHkS6Wfs/namesrakaa/Sheet1';
+const options = {};
+Sheet2API.read(url, options).then(function(result){
+    resp=result;
+    console.log(result);
+}, function(error){
+    console.log(error);
+});
 
 quran.style.display = "none";
 ahzabN.style.display = "none";
