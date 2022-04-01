@@ -94,12 +94,12 @@ function dateInRamadan(tDate, rStart){
   const result = tDate >=rStart ? tDate-rStart +1 : tDate-rStart +31
   return result
 }
-
+const sDR=2 //the starting date of Ramadan
 // a function that take inital ahzab for the first day of ramadan and return the current ahzab based of today date
 const getTodayAhzab=(arr)=>{
 
-    const start = (arr[0] + 2*(dateInRamadan(dateN, 14) -1 )) <= 60 ? (arr[0] + 2*(dateInRamadan(dateN, 14) -1 )) : (arr[0] + 2*(dateInRamadan(dateN, 14) -1 ))-60
-    const end = (arr[1] + 2*(dateInRamadan(dateN, 14) -1 )) <= 60 ? (arr[1] + 2*(dateInRamadan(dateN, 14) -1 )) : (arr[1] + 2*(dateInRamadan(dateN, 14) -1 ))-60
+    const start = (arr[0] + 2*(dateInRamadan(dateN, sDR) -1 )) <= 60 ? (arr[0] + 2*(dateInRamadan(dateN, sDR) -1 )) : (arr[0] + 2*(dateInRamadan(dateN, sDR) -1 ))-60
+    const end = (arr[1] + 2*(dateInRamadan(dateN, sDR) -1 )) <= 60 ? (arr[1] + 2*(dateInRamadan(dateN, sDR) -1 )) : (arr[1] + 2*(dateInRamadan(dateN, sDR) -1 ))-60
     
     formN.innerText=start
     toN.innerText=end
