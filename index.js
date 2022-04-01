@@ -66,7 +66,9 @@ mapUsers()
 selected1.addEventListener('change', event => {
     event.preventDefault();
    console.log("selectd 1")
-    console.log(selected1.value)
+   let x = selected1.selectedIndex;
+   let y = selected1.options;
+    console.log("Index: " + y[x].index + " is " + y[x].text)
     //const ahzab = users[selected.value] ? users[selected.value] : [0,0]
     name.innerText=" "+selected.value + " "
 
