@@ -65,7 +65,7 @@ const mapUsers = () =>{
 mapUsers()
 selected1.addEventListener('change', event => {
     event.preventDefault();
-   console.log("hagsd")
+   console.log("selectd 1")
     console.log(selected1.value)
     //const ahzab = users[selected.value] ? users[selected.value] : [0,0]
     name.innerText=" "+selected.value + " "
@@ -79,6 +79,7 @@ selected.addEventListener('change', event => {
  
     const ahzab = users[selected.value] ? users[selected.value] : [0,0]
     name.innerText=" "+selected.value + " "
+    console.log("selectd")
     // quran.innerText= "The Ahazab that "+ selected.value + " need to read to day is:"
     // ahzabN.innerText= getTodayAhzab(ahzab)
     getTodayAhzab(ahzab)
