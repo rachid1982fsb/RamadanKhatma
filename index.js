@@ -64,7 +64,8 @@ const mapUsers = () =>{
 mapUsers()
 selected1.addEventListener('change', event => {
     event.preventDefault();
- console.log(selected1.value)
+   console.log("hagsd")
+    console.log(selected1.value)
     //const ahzab = users[selected.value] ? users[selected.value] : [0,0]
     name.innerText=" "+selected.value + " "
 
