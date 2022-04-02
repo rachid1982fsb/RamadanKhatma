@@ -1,5 +1,4 @@
 const selected = document.getElementById("selected")
-const selected1 = document.getElementById("selected1")
 const quran =  document.getElementById("quran")
 const ahzabN =  document.getElementById("ahzab")
 const formN =  document.getElementById("from")
@@ -51,17 +50,17 @@ let users = {
 const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
 
 
-//const mapUsers = () =>{
-  //  usersNames.map( user => {
-    //    const option = document.createElement('option');
-      //  option.innerText= user
-        //option.value= user
-     //   selected.append(option)
-  //  } )
-//}
+const mapUsers = () =>{
+    usersNames.map( user => {
+        const option = document.createElement('option');
+        option.innerText= user
+        option.value= user
+       selected.append(option)
+   } )
+}
 
 
-//mapUsers()
+mapUsers()
 selected1.addEventListener('change', event => {
     event.preventDefault();
    console.log("selectd 1")
@@ -78,18 +77,18 @@ selected1.addEventListener('change', event => {
     ahzabN.style.display = "block";
 })
 
-//selected.addEventListener('change', event => {
-  //  event.preventDefault();
+selected.addEventListener('change', event => {
+    event.preventDefault();
  
-    //const ahzab = users[selected.value] ? users[selected.value] : [0,0]
-    //name.innerText=" "+selected.value + " "
-    //console.log("selectd")
-    // quran.innerText= "The Ahazab that "+ selected.value + " need to read to day is:"
-    // ahzabN.innerText= getTodayAhzab(ahzab)
-    //getTodayAhzab(ahzab)
-    //quran.style.display = "block";
-    //ahzabN.style.display = "block";
-//})
+    const ahzab = users[selected.value] ? users[selected.value] : [0,0]
+    name.innerText=" "+selected.value + " "
+    console.log("selectd")
+    //quran.innerText= "The Ahazab that "+ selected.value + " need to read to day is:"
+    //ahzabN.innerText= getTodayAhzab(ahzab)
+    getTodayAhzab(ahzab)
+    quran.style.display = "block";
+    ahzabN.style.display = "block";
+})
 
 
 //get today Date
@@ -111,7 +110,7 @@ function dateInRamadan(tDate, rStart){
   const result = tDate >=rStart ? tDate-rStart +1 : tDate-rStart +31
   return result
 }
-const sDR=2 //the starting date of Ramadan
+const sDR=3 //the starting date of Ramadan
 // a function that take inital ahzab for the first day of ramadan and return the current ahzab based of today date
 const getTodayAhzab=(arr)=>{
 
