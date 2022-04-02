@@ -14,45 +14,29 @@ const todaydate= document.getElementById("date")
 
 //let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb"]
 
-let users = {
-               HajMuhamed_Rakaa: [1,"راكع محمد "],
-               Khalid_Rakaa: [2,"راكع خالد"],
-               Abdessamad_Rakaa: [3,"راكع عبد الصمد "],
-               Adil_Rakaa: [4,"راكع عادل "],
-               Abdalaziz_Rakaa: [5,"راكع عبد العزيز "],
-               Abdelwadoud_Rakaa: [6,"راكع عبد الودود"],
-               SSadiq_Rakaa: [7,"راكع صديق"],
-               Abderrahim_Rakaa: [8,"راكع عبد الرحيم"],
-               Hmed_Rakaa: [9,"راكع احمد"],
-               Yahya_Rakaa: [10,"راكع يحيى"],
-               Abdelwahab_Rakaa: [11,"راكع عبد الوهاب"],
-               Rachid_Rakaa: [13,14],
-               Yahya_Rakaa: [15,16],
-               //Mohammed_Atari: [41,42],
-               Sadiq_Rakaa: [17,18],
-               //Mohamed_Lakriti: [45,46],
-               //Ahmed_Rakaa: [49,50],
-               //AbdEllah_Rakaa: [51,52],
-              // Aziz_Rakaa: [53,54],
-               Abdelmoumen_Rakaa: [19,20],
-               Abdelwahab_Rakaa: [21,22],
-               Mastapha_Mouarif: [23,24],
-               Ayoub_Mouarif: [25,26],
-               Amine_Mouarif: [27,28],
-               Said_Elkriti: [29,30],
-               Aziz_Lakriti: [31,32],
-               //Abdelhaq_Qadach: [57,58],
-               Omar_Lakriti: [33,34],
-               Abderrahman_Rakaa: [35,36],
-               Hamza_Mouarif: [37,38]
-            }
+let users = [
+  {HajMuhamed_Rakaa: [1,"راكع محمد "]},
+  {Khalid_Rakaa: [2,"راكع خالد"]},
+  {Abdessamad_Rakaa: [3,"راكع عبد الصمد "]},
+  {Adil_Rakaa: [4,"راكع عادل "]},
+  {Abdalaziz_Rakaa: [5,"راكع عبد العزيز "]},
+  {Abdelwadoud_Rakaa: [6,"راكع عبد الودود"]},
+  {SSadiq_Rakaa: [7,"راكع صديق"]},
+  {Abderrahim_Rakaa: [8,"راكع عبد الرحيم"]},
+  {Hmed_Rakaa: [9,"راكع احمد"]},
+  {Yahya_Rakaa: [10,"راكع يحيى"]},
+  {Abdelwahab_Rakaa: [11,"راكع عبد الوهاب"]},
+  {Omar_Lakriti: [33,34]},
+  {Abderrahman_Rakaa: [35,36]},
+  {Hamza_Mouarif: [37,38]}
+            ]
             
 // const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
 const usersNames = Object.keys(users)
 
 
 const mapUsers = () =>{
-    usersNames.map( user => {
+    users.map( user => {
         const option = document.createElement('option');
         option.innerText= user
         option.value= user
@@ -62,21 +46,7 @@ const mapUsers = () =>{
 
 
 mapUsers()
-selected1.addEventListener('change', event => {
-    event.preventDefault();
-   console.log("selectd 1")
-   let x = selected1.selectedIndex;
-   let y = selected1.options;
-  
-    console.log("value: " + selected1.value + " is " + y[x].text)
-   let juza=selected1.value
-    name.innerText = " "+ y[x].text + " "
-    const ahzab =  [(((juza)*2)-1), ((juza)*2)]? [(((juza)*2)-1), ((juza)*2)] : [0,0]
-    getTodayAhzab(ahzab)
 
-    quran.style.display = "block";
-    ahzabN.style.display = "block";
-})
 
 selected.addEventListener('change', event => {
     event.preventDefault();
