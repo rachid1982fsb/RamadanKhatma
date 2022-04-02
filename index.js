@@ -10,13 +10,13 @@ quran.style.display = "none";
 ahzabN.style.display = "none";
 const todaydate= document.getElementById("date")
 
-const urlPram=  window.location.search
+// const urlPram=  window.location.search
 
-let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb"]
+//let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb"]
 
 let users = {
-               Khalid_Rakaa: [1,"سلام"],
-               HajMuhamed_Rakaa: [3,"سلام"],
+               HajMuhamed_Rakaa: [1,"راكع محمد "],
+               Khalid_Rakaa: [3,"راكع خالد"],
                Abdelwadoud_Rakaa: [5,"نتايس"],
                //Imran_Rakaa: [7,8],
                //IbnAbdelmoumen_Rakaa: [9,10],
@@ -47,7 +47,8 @@ let users = {
                Hamza_Mouarif: [37,38]
             }
             
-const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
+// const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
+const usersNames = Object.keys(users)
 
 
 const mapUsers = () =>{
