@@ -15,16 +15,16 @@ const urlPram=  window.location.search
 let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb"]
 
 let users = {
-               Khalid_Rakaa: [1,2],
-               HajMuhamed_Rakaa: [3,4],
-               Abdelwadoud_Rakaa: [5,6],
+               Khalid_Rakaa: [1,"سلام"],
+               HajMuhamed_Rakaa: [3,"سلام"],
+               Abdelwadoud_Rakaa: [5,"نتايس"],
                //Imran_Rakaa: [7,8],
                //IbnAbdelmoumen_Rakaa: [9,10],
                //HajHassan_Rakaa: [11,12],
                //Simohammed_Rakaa: [13,14],
                AbdElssamia_Rakaa: [7,8],
                //Miloud_Mouarif: [25,26],
-               Adil_Rakaa: [9,10],
+               Adil_Rakaa: [9,"هعثص"],
                Abdelssamad_Rakaa: [11,12],
                Rachid_Rakaa: [13,14],
                Yahya_Rakaa: [15,16],
@@ -80,8 +80,10 @@ selected1.addEventListener('change', event => {
 selected.addEventListener('change', event => {
     event.preventDefault();
  
-    const ahzab = users[selected.value] ? users[selected.value] : [0,0]
-    name.innerText=" "+selected.value + " "
+    const userHizb = users[selected.value] ? users[selected.value] : [0,""]
+    name.innerText=" "+ userHizb[1] + " "
+    const juza =  userHizb[0]
+    const ahzab =  [(((juza)*2)-1), ((juza)*2)]? [(((juza)*2)-1), ((juza)*2)] : [0,0]
     console.log("selectd")
     //quran.innerText= "The Ahazab that "+ selected.value + " need to read to day is:"
     //ahzabN.innerText= getTodayAhzab(ahzab)
