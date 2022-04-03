@@ -54,8 +54,8 @@ const usersNames = Object.keys(users)
 const mapUsers = () =>{
     usersNames.map( user => {
         const option = document.createElement('option');
-      console.log("name here: ",users.user[1])
-        option.innerText= users.user[1]
+      console.log("name here: ",users[user][1])
+        option.innerText= users[user][1]
         option.value= user
        selected.append(option)
    } )
