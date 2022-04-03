@@ -26,9 +26,25 @@ let users = {
   Hmed_Rakaa: [9,"راكع احمد"],
   Yahya_Rakaa: [10,"راكع يحيى"],
   Abdelwahab_Rakaa: [11,"راكع عبد الوهاب"],
-  Rachid_Rakaa: [12,راكع رشيد],
-  AbdEllah_Rakaa: [13,راكع عبد الله],
-  Simohamed_Rakaa: [14,راكع سمحمد]
+  Rachid_Rakaa: [12,"راكع رشيد"],
+  AbdEllah_Rakaa: [13,"راكع عبد الله"],
+  Simohaamed_Rakaa: [14,"راكع سمحمد"],
+  dessamad_aRakaa: [15,"معاريف مصطفى  "],
+  Adil_Rakaaa: [16,"معاريف حمزة"],
+  Abdalaziz_Raakaa: [17,"معاريف امين"],
+  Abdelwadouda_Rakaa: [18,"معاريف ايوب"],
+  SSadiq_Rakaaa: [19,"كريتي سعيد"],
+  Abderrahiam_Rakaa: [20,"كريتي سمحمد"],
+  Hmed_Rakaaa: [21,"كريتي عمر"],
+  Yahya_Rakaas: [22,"كريتي عبد العزيز"],
+  Abdelwahab_Raskaa: [23,"راكع عبد المومن"],
+  Rachid_Rakaas: [24,"ابن عبد المومن"],
+  AbdEllah_Raskaa: [25,"سرسار عبد الله"],
+  Simohamed_sRakaa: [26,"سرسار عمر"],
+   Abdelwasshab_Rakaa: [27,"مالكي خالد"],
+  Rachid_sRakaa: [28,"راكع عبد سميع"],
+  AbdElsslah_Rakaa: [29,"راكع عبد العزيز دمنات"],
+  Simoshamed_Rakaa: [30,"راكع عبد الناصر المانيا"]
 }
             
 // const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
