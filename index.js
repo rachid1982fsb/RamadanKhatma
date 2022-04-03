@@ -14,22 +14,22 @@ const todaydate= document.getElementById("date")
 
 //let comingUsers=["Rachid","rakaa","yasser","Israa","Chorouq","Zineb"]
 
-let users = [
-  {HajMuhamed_Rakaa: [1,"راكع محمد "]},
-  {Khalid_Rakaa: [2,"راكع خالد"]},
-  {Abdessamad_Rakaa: [3,"راكع عبد الصمد "]},
-  {Adil_Rakaa: [4,"راكع عادل "]},
-  {Abdalaziz_Rakaa: [5,"راكع عبد العزيز "]},
-  {Abdelwadoud_Rakaa: [6,"راكع عبد الودود"]},
-  {SSadiq_Rakaa: [7,"راكع صديق"]},
-  {Abderrahim_Rakaa: [8,"راكع عبد الرحيم"]},
-  {Hmed_Rakaa: [9,"راكع احمد"]},
-  {Yahya_Rakaa: [10,"راكع يحيى"]},
-  {Abdelwahab_Rakaa: [11,"راكع عبد الوهاب"]},
-  {Omar_Lakriti: [33,34]},
-  {Abderrahman_Rakaa: [35,36]},
-  {Hamza_Mouarif: [37,38]}
-            ]
+let users = {
+  HajMuhamed_Rakaa: [1,"راكع محمد "],
+  Khalid_Rakaa: [2,"راكع خالد"],
+  Abdessamad_Rakaa: [3,"راكع عبد الصمد "],
+  Adil_Rakaa: [4,"راكع عادل "],
+  Abdalaziz_Rakaa: [5,"راكع عبد العزيز "],
+  Abdelwadoud_Rakaa: [6,"راكع عبد الودود"],
+  SSadiq_Rakaa: [7,"راكع صديق"],
+  Abderrahim_Rakaa: [8,"راكع عبد الرحيم"],
+  Hmed_Rakaa: [9,"راكع احمد"],
+  Yahya_Rakaa: [10,"راكع يحيى"],
+  Abdelwahab_Rakaa: [11,"راكع عبد الوهاب"],
+  Rachid_Rakaa: [12,راكع رشيد],
+  AbdEllah_Rakaa: [13,راكع عبد الله],
+  Simohamed_Rakaa: [14,راكع سمحمد]
+}
             
 // const usersNames = urlPram == "?yes" ? Object.keys(users) : comingUsers
 const usersNames = Object.keys(users)
@@ -38,6 +38,7 @@ const usersNames = Object.keys(users)
 const mapUsers = () =>{
     usersNames.map( user => {
         const option = document.createElement('option');
+      console.log("name here: ",users.user[1])
         option.innerText= users.user[1]
         option.value= user
        selected.append(option)
