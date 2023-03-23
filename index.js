@@ -100,7 +100,7 @@ function dateInRamadan(tDate, rStart){
   const result = tDate >=rStart ? tDate-rStart +1 : tDate-rStart +31
   return result
 }
-const sDR=3 //the starting date of Ramadan
+const sDR=23 //the starting date of Ramadan
 // a function that take inital ahzab for the first day of ramadan and return the current ahzab based of today date
 const getTodayAhzab=(arr)=>{
 
